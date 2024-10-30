@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);
+    font-family: Arial, sans-serif; /* Adding a default font */
+    margin: 0;
+    font-size: 28px;
+}
+
+
+
+
+
+/*Cards*/
+.cards {
+    display: flex;
+    align-items: center; /* Center cards horizontally */
+    justify-content: center; /* Center cards vertically */
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+.card {
+    width: 300px;
+    background: #ffffff; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 5px; /* Padding inside the card */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+.about-product {
+    text-align: center; /* Center text */
+}
+
+.about-product img {
+    height: 200px;
+    width: auto;
+}
+
+
+.text-black-50 {
+    color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,104 @@
+/* Navbar */
+#navbar {
+    position: sticky;              /* Keeps the navbar at the top of the viewport */
+    top: 0;                        /* Ensures the navbar is at the top */
+    background-color: #f1f1f1;    /* Light background color */
+    margin-bottom: 50px;           /* Space below the navbar */
+    display: flex;                 /* Use flexbox for layout */
+    align-items: center;           /* Vertically center items */
+    padding: 10px 20px;           /* Padding around the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+}
+
+/* Align "Home" to the left */
+#navbar .left {
+    flex: 1;                       /* Takes up all available space on the left */
+}
+
+/* Align other links to the right */
+#navbar .right {
+    display: flex;                 /* Use flexbox for right side links */
+    margin-left: auto;            /* Pushes this section to the right */
+}
+
+#navbar a {
+    color: #333;                  /* Text color */
+    text-align: center;           /* Center text in links */
+    padding: 14px 16px;           /* Padding for links */
+    text-decoration: none;         /* No underline on links */
+    font-size: 17px;              /* Font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#navbar a:hover {
+    background-color: #ddd;       /* Background color on hover */
+    color: black;                 /* Text color on hover */
+}
+
+#navbar a.active {
+    background-color: #2b2965;    /* Background color for active link */
+    color: white;                 /* Text color for active link */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative; /* Parent element is positioned relative for dropdown placement */
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    padding: 14px 16px;
+    color: #333;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; /* Show pointer on hover */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: #f9f9f9; /* Light background color for dropdown */
+    min-width: 160px; /* Width of the dropdown */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333; /* Text color */
+    padding: 12px 16px; /* Padding for links */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light hover effect */
+    color: black; /* Hover text color */
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown button hover effect */
+.dropdown:hover .dropbtn {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+/* Additional styles for the header */
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 16px;                /* Padding for content area */
+}
